@@ -47,3 +47,9 @@ li.answer {
   background: #4093e6;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 500px) {
+  .col-1 {
+    width: 100%;
+  }
+}
