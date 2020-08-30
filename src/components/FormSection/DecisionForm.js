@@ -64,10 +64,17 @@ const DecisionForm = ({
         })}
       </div>
       <div className="frm-grp">
-        <span onClick={handleAddOption} className="lft-btn">
-          <i className="fas fa-plus-circle"></i>
-          Add Option
-        </span>
+        {optionNumber < 26 ? (
+          <span onClick={handleAddOption} className="lft-btn">
+            <i className="fas fa-plus-circle"></i>
+            Add Option
+          </span>
+        ) : (
+          <span className="lft-btn disabled-btn">
+            <i className="fas fa-plus-circle"></i>
+            Add Option
+          </span>
+        )}
         <input type="submit" value="DECISIDE" />
       </div>
     </form>
