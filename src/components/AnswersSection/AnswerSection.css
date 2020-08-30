@@ -1,0 +1,49 @@
+.flex-row {
+  display: flex;
+  width: 70%;
+  margin: 25px auto;
+}
+
+.col-1 {
+  width: 50%;
+}
+
+.bold-txt-list {
+  list-style: none;
+}
+
+.bold-txt-list > h2 {
+  margin: 12px 0;
+}
+
+.bold-txt-list li {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  transition: border, color, padding 0.7s;
+}
+
+li.answer {
+  border: 2.5px solid blue;
+  border-radius: 8px;
+  color: blue;
+  padding: 12px;
+}
+
+.col-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-card > button {
+  width: 70%;
+  padding: 18px;
+  margin: 12px auto;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #4093e6;
+  border-radius: 5px;
+}

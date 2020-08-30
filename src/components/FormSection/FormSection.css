@@ -1,0 +1,73 @@
+.ctr-frm {
+  width: 65%;
+  margin: 12px auto;
+}
+.frm-grp {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.frm-grp > label {
+  font-size: 1.6rem;
+}
+
+.frm-wrp {
+  width: 100%;
+}
+
+.frm-grp input[type="text"] {
+  width: 100%;
+  margin-top: 16px;
+  padding: 18px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #edf5fd;
+  color: #000000;
+}
+
+.focus-span {
+  display: block;
+  border-bottom: 1.8px solid #4093e6;
+  width: 0;
+  margin: 0 auto;
+  transition: width 0.7s;
+}
+
+.frm-grp input:focus + .focus-span {
+  width: 100%;
+}
+
+.frm-grp > input[type="submit"] {
+  float: right;
+  min-width: 20%;
+  margin: 12px 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 18px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: #4093e6;
+}
+
+.lft-btn {
+  cursor: pointer;
+  border-bottom: 2px solid #4093e6;
+}
+
+.fa-plus-circle {
+  color: #4093e6;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .ctr-frm {
+    width: 90%;
+  }
+  .frm-grp input[type="*"] {
+    width: 100%;
+  }
+}
