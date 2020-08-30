@@ -1,4 +1,4 @@
-.flex-row {
+.flex-container {
   display: flex;
   width: 70%;
   margin: 25px auto;
@@ -27,7 +27,7 @@ li.answer {
   border: 2.5px solid blue;
   border-radius: 8px;
   color: blue;
-  padding: 12px;
+  padding: 16px;
 }
 
 .col-card {
@@ -35,7 +35,7 @@ li.answer {
   flex-direction: column;
 }
 
-.col-card > button {
+.col-card button {
   width: 70%;
   padding: 18px;
   margin: 12px auto;
@@ -48,7 +48,10 @@ li.answer {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
   .col-1 {
     width: 100%;
   }

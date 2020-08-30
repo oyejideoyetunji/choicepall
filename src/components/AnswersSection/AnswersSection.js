@@ -10,7 +10,7 @@ const AnswersSection = ({ optionsArray, resetQuestionAndOptions }) => {
 
   return (
     <section className="container">
-      <div className="flex-row">
+      <div className="flex-container">
         <ul className="col-1 bold-txt-list">
           <h2>Options List</h2>
           {optionsArray.length > 0
