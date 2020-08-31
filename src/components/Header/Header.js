@@ -8,11 +8,8 @@ const Header = () => {
         <span className="brand-name">Choicepall</span>
       </nav>
       <header className="hdr-rw-ctr">
-        <h1>Your Wing-man when choosing</h1>
-        <p>
-          Is it too hard to just pick one?, your decion making pall does that
-          for you
-        </p>
+        <h1>Choose with Choicepall</h1>
+        <p>Too hard to just pick one?, Choicepall does that for you</p>
       </header>
     </>
   );

@@ -1,0 +1,15 @@
+.flex-block-col {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.flex-block-col > * {
+  margin: 8px 0;
+}
+
+.flex-block-col > h3 + p {
+  padding-left: 18px;
+  font-size: 0.9rem;
+}

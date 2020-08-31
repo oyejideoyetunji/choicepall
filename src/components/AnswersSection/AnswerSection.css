@@ -1,4 +1,4 @@
-.flex-container {
+.flex-block-ctr {
   display: flex;
   width: 70%;
   margin: 25px auto;
@@ -50,7 +50,7 @@ li.answer {
 }
 
 @media screen and (max-width: 790px) {
-  .flex-container {
+  .flex-block-ctr {
     flex-direction: column;
   }
   .col-1 {
