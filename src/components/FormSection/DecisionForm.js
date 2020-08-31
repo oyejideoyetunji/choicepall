@@ -44,7 +44,7 @@ const DecisionForm = ({
             name="question"
             value={question}
             onChange={handleInputChange}
-            placeholder="Q: Enter your question here"
+            placeholder="Q: Question"
             required
           />
           <span className="focus-span"></span>

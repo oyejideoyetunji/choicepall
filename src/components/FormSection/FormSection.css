@@ -14,14 +14,13 @@
 .frm-wrp {
   width: 100%;
   margin: 16px 0;
-  padding: 8px;
+  padding: 4px;
   border-radius: 5px;
   background-color: #ffffff;
-  border: 2px solid #ffffff;
 }
 
 .frm-wrp input[type="text"] {
-  width: 80%;
+  max-width: 80%;
   padding: 18px;
   font-size: 1.1rem;
   outline: none;
@@ -31,7 +30,7 @@
 }
 
 .inline-btn-sm {
-  min-width: 10%;
+  min-width: 5%;
   padding: 18px;
   border-radius: 4px;
   cursor: pointer;
@@ -84,7 +83,7 @@
   .ctr-frm {
     width: 90%;
   }
-  .frm-grp input[type="*"] {
-    width: 100%;
+  .frm-wrp input[type="text"] {
+    max-width: 60%;
   }
 }
