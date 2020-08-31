@@ -38,6 +38,7 @@ function App() {
           path="/answers"
           render={(props) => (
             <AnswersSection
+              question={question}
               optionsArray={optionsArray}
               resetQuestionAndOptions={resetQuestionAndOptions}
               {...props}

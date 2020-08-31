@@ -3,16 +3,21 @@ import { useHistory } from "react-router-dom";
 import { pickRandomElementFromArray } from "../../Utills/Utills";
 import "./AnswerSection.css";
 
-const AnswersSection = ({ optionsArray, resetQuestionAndOptions }) => {
+const AnswersSection = ({
+  optionsArray,
+  question,
+  resetQuestionAndOptions,
+}) => {
   let [answer, setAnswer] = useState(pickRandomElementFromArray(optionsArray));
 
   const history = useHistory();
 
   return (
     <section className="container">
+      <h2 className="hdr-rw-ctr">Question: {question}</h2>
       <div className="flex-container">
         <ul className="col-1 bold-txt-list">
-          <h2>Options List</h2>
+          <h3>OPTIONS</h3>
           {optionsArray.length > 0
             ? optionsArray.map((option, idx) => {
                 if (answer.name === option.name) {

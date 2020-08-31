@@ -28,6 +28,7 @@ li.answer {
   border-radius: 8px;
   color: blue;
   padding: 16px;
+  background: #ffffff;
 }
 
 .col-card {
@@ -48,11 +49,19 @@ li.answer {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 790px) {
   .flex-container {
     flex-direction: column;
   }
   .col-1 {
     width: 100%;
+  }
+
+  .col-card {
+    order: 1;
+  }
+
+  .bold-txt-list {
+    order: 2;
   }
 }

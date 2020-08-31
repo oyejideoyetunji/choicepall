@@ -10,16 +10,16 @@
   font-family: "Shrikhand", cursive;
 }
 
-.hdr-rw {
+.hdr-rw-ctr {
   text-align: center;
   padding: 16px;
 }
 
-.hdr-rw > h1 {
+.hdr-rw-ctr > h1 {
   color: #4093e6;
   letter-spacing: 1.5px;
 }
 
-.hdr-rw > p {
+.hdr-rw-ctr > p {
   font-size: 1.1rem;
 }
