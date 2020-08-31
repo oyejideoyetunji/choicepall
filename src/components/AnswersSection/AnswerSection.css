@@ -20,7 +20,7 @@
   margin: 8px 0;
   padding: 10px;
   font-size: 1.3rem;
-  transition: border, color, padding 0.7s;
+  transition: border, color, padding 1s;
 }
 
 li.answer {

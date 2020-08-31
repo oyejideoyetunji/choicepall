@@ -36,7 +36,7 @@ const PopularQuestions = ({ pastQuestions }) => {
         <h3>Your most asked question(s)</h3>
         {mostFrequentQuestions.map((question, idx) => (
           <p key={idx}>
-            Question: <em>{question.value}</em> | You asked:
+            Question: <em>{question.value}</em> | You asked :
             <em>{question.frequency} time(s)</em>
           </p>
         ))}

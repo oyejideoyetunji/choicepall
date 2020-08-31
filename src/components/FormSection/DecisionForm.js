@@ -30,19 +30,25 @@ const DecisionForm = ({
     return setOptionNumber(optionNumber + 1);
   };
 
+  const handleRemoveChoice = function () {
+    setOptionNumber(optionNumber - 1);
+  };
+
   return (
     <form onSubmit={handleSubmit} className="ctr-frm">
       <div className="frm-grp">
         <label>Decision</label>
-        <input
-          type="text"
-          name="question"
-          value={question}
-          onChange={handleInputChange}
-          placeholder="Q: Enter your question here"
-          required
-        />
-        <span className="focus-span"></span>
+        <div className="frm-wrp">
+          <input
+            type="text"
+            name="question"
+            value={question}
+            onChange={handleInputChange}
+            placeholder="Q: Enter your question here"
+            required
+          />
+          <span className="focus-span"></span>
+        </div>
       </div>
       <div className="frm-grp">
         <label>Options</label>
@@ -58,6 +64,18 @@ const DecisionForm = ({
                 onChange={handleInputChange}
                 required
               />
+              {idx === optionLettersArray.length - 1 ? (
+                <span
+                  className={
+                    optionNumber > 2
+                      ? "inline-btn-sm"
+                      : "inline-btn-sm disabled-btn"
+                  }
+                  onClick={optionNumber > 2 ? handleRemoveChoice : null}
+                >
+                  Remove
+                </span>
+              ) : null}
               <span className="focus-span"></span>
             </div>
           );

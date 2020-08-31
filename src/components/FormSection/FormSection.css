@@ -13,18 +13,30 @@
 
 .frm-wrp {
   width: 100%;
+  margin: 16px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
-.frm-grp input[type="text"] {
-  width: 100%;
-  margin-top: 16px;
+.frm-wrp input[type="text"] {
+  width: 80%;
   padding: 18px;
   font-size: 1.1rem;
   outline: none;
-  border: 2px solid #ffffff;
-  border-radius: 8px;
+  border: none;
   background-color: #ffffff;
   color: #000000;
+}
+
+.inline-btn-sm {
+  min-width: 10%;
+  padding: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  background-color: #e6f7f2;
 }
 
 .focus-span {
@@ -35,7 +47,7 @@
   transition: width 0.7s;
 }
 
-.frm-grp input:focus + .focus-span {
+.frm-wrp input:focus + .focus-span {
   width: 100%;
 }
 
